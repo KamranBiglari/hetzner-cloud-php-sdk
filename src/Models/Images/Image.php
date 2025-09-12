@@ -121,7 +121,7 @@ class Image extends ImageReference implements Resource
             image_size: $input->image_size,
             disk_size: $input->disk_size,
             created: $input->created,
-            created_from: new ServerReference($input->created_from->id),
+            created_from: new ServerReference($input->created_from?->id),
             os_flavor: $input->os_flavor,
             bound_to: $input->bound_to,
             os_version: $input->os_version,
